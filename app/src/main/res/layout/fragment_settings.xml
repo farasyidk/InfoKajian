@@ -1,14 +1,75 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
 
+    <TextView
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Tambah Kajian" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <EditText
+        android:id="@+id/txtNamaKajian"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_notifications_black_24dp" />
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:hint="Nama Barang"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/txtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Waktu Kajian"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/txtTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Kajian"
+        android:inputType="date" />
+
+
+    <EditText
+        android:id="@+id/txtLokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Lokasi Kajian"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/txtDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Deskripsi singkat mengenai kajian anda"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnDraft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Draft" />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnPublish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publish" />
+    </LinearLayout>
+
+
+</LinearLayout>

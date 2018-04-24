@@ -6,10 +6,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/list_kajian" >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
 
 </FrameLayout>
